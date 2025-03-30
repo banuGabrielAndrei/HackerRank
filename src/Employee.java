@@ -29,7 +29,7 @@ public class Employee implements Comparable<Employee> {
     }
 
     public static void sortEmployees(List<Employee> employees) {
-        employees.sort(Comparator.comparing(Employee::getSalary, Comparator.reverseOrder()).
+        employees.sort(Comparator.comparing(Employee::getSalary).
                                 thenComparing(Employee::getName));
     }
 
